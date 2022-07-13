@@ -29,7 +29,9 @@ and open the template in the editor.
     </head>
     <body>
             <script>
-
+                $(document).ready(function(){
+                    $("#puerto").html(location.host);
+                })
                 function nuevo(){
                     $.ajax({
                         url:"new?nombre=" + $("#persona").val(),
@@ -86,7 +88,7 @@ and open the template in the editor.
             </table>         
             <hr/>
             <footer class="text-right">
-                Puerto: <span th:text="${port}"></span>
+                <b>Puerto interno:</b> <span th:text="${port}"></span> - <b>URL</b>: <span id="puerto"></span>
             </footer>
 
         </div>
