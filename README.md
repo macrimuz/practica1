@@ -1,4 +1,5 @@
 Dependencias para crear el .war
+
         <dependency>
             <groupId>jakarta.xml.bind</groupId>
             <artifactId>jakarta.xml.bind-api</artifactId>
